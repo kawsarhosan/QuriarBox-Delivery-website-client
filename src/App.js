@@ -15,7 +15,7 @@ import NotFound from './Components/NotFound/NotFound';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Register from './Components/Register/Register';
-import ServiceDetails from './Components/Service/ServiceDetails';
+// import ServiceDetails from './Components/Service/ServiceDetails';
 import Services from './Components/Services/Services';
 import Tracking from './Components/Tracking/Tracking';
 
@@ -35,8 +35,11 @@ function App() {
           <Route path='/services'>
             <Services></Services>
           </Route>
-          <PrivateRoute path= "/service/:id">
+          {/* <PrivateRoute path= "/services/:id">
             <ServiceDetails></ServiceDetails>
+          </PrivateRoute> */}
+          <PrivateRoute path='/placeorder/:id'>
+            <PlaceOrder></PlaceOrder>
           </PrivateRoute>
           {/* <Route path='/tracking'>
             <Tracking></Tracking>
@@ -54,18 +57,16 @@ function App() {
           <PrivateRoute path='/tracking'>
             <Tracking></Tracking>
           </PrivateRoute>
-          <Route path='/addservice'>
+          <PrivateRoute path='/addservice'>
             <AddService></AddService>
-          </Route>
-          <Route path='/placeorder'>
-            <PlaceOrder></PlaceOrder>
-          </Route>
-          <Route path='/myorders'>
+          </PrivateRoute>
+          
+          <PrivateRoute path='/myorders'>
             <MyOrders></MyOrders>
-          </Route>
-          <Route path='/manageallorders'>
+          </PrivateRoute>
+          <PrivateRoute path='/manageallorders'>
             <MangaeAllOrders></MangaeAllOrders>
-          </Route>
+          </PrivateRoute>
           <Route path="/register">
             <Register></Register>
           </Route>

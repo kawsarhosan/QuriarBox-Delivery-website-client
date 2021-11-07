@@ -12,7 +12,7 @@ const FindUs = () => {
                 <div className="card-img-overlay text-center p-5">
                     <h2 className='custom-color fw-bold py-5'>FASTEST DELIVERY</h2>
                 <p >You can get your valuable item in the <br/> fastest period of  time with safety. <br/> Because your emergency  is our first priority..</p> <br/>
-                <h1 className='custom-color '><i class="fas fa-play-circle"></i></h1>
+                <h1 className='custom-color '><i className="fas fa-play-circle"></i></h1>
                 </div>
             </div>
 
@@ -21,11 +21,11 @@ const FindUs = () => {
             <h1 className='fw-bold custom-color '>Find Us</h1>
         </div>
         <div className='container'>
-        <div className="card " styleName="max-width: 500px;">
+        <div className="card " >
   <div className="row  g-0 d-flex justify-content-center align-items-center">
     <div className="col-md-6">
       <img
-        src="/images/map.png"
+        src="https://i.ibb.co/SrLvqLQ/Map.png"
         alt="..."
         className="img-fluid"
       />

@@ -1,14 +1,29 @@
 
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import useFirebase from '../Hooks/useFirebase';
+import { Link, NavLink, useLocation, useHistory } from 'react-router-dom';
+import useAuth from '../Hooks/useAuth';
+
 
 
 const Login = () => {
-  const {signInWithGoogle} = useFirebase();
+  const {signInWithGoogle, setUser,setError, setIsLoading} = useAuth();
+  const location = useLocation();
+  const redirectURL = location.state?.from || '/home';
+
+  const history = useHistory();
 
   const handleGoogle = () =>{
-    signInWithGoogle();
+    signInWithGoogle()
+    .then((result)=>{
+      history.push(redirectURL);
+      setUser(result.user)
+      console.log('sign in with google succesfully', result.user);
+  })
+  .catch(error=>{
+      setError(error.message)
+  })
+  .finally(()=>setIsLoading(false))
+
   }
     return (
         <div className='container'>

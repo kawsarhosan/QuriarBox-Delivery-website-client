@@ -34,16 +34,16 @@ const Footer = () => {
             Services
           </h6>
           <p>
-            <NavLink to="//ambulance" className="text-light">Ambulance</NavLink>
+            <NavLink to="//ambulance" className="text-light">Parcel Delivery</NavLink>
           </p>
           <p>
-            <NavLink to="//React" className="text-light">React</NavLink>
+            <NavLink to="//React" className="text-light">Bulk shipment</NavLink>
           </p>
           <p>
-            <NavLink to="//vue" className="text-light">Vue</NavLink>
+            <NavLink to="//vue" className="text-light">Line Hall</NavLink>
           </p>
           <p>
-            <NavLink to="//laravel" className="text-light">Laravel</NavLink>
+            <NavLink to="//laravel" className="text-light">24/7 Support</NavLink>
           </p>
         </div>
         {/* <!-- Grid column -->
@@ -55,7 +55,7 @@ const Footer = () => {
             Useful links
           </h6>
           <p>
-            <NavLink to="/corona" className="text-light">Corona Helpline</NavLink>
+            <NavLink to="/corona" className="text-light">Helpline</NavLink>
           </p>
           <p>
             <NavLink to="/care" className="text-light">Emaergency Care</NavLink>
@@ -77,8 +77,7 @@ const Footer = () => {
           </h6>
           <p><i className="fas fa-home me-3"></i> Farmgate, Tejgaon, Dhaka.</p>
           <p>
-            <i className="fas fa-envelope me-3"></i>
-            info@quriarbox.com.bd
+            <i className="fas fa-envelope me-3"></i> info@quriarbox.com.bd
           </p>
           <p><i className="fas fa-phone me-3"></i> 01758216414</p>
           <p><i className="fas fa-print me-3"></i> 01854256485</p>

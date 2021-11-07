@@ -13,8 +13,9 @@ const AddService = () => {
         const price = priceRef.current.value;
        const description =descriptionRef.current.value;
 
+
        const newService = {img: img, title:title, price: price,  description: description}
-        fetch("http://localhost:5000/services", {
+        fetch("https://agile-caverns-69214.herokuapp.com/services", {
             method:'POST',
             headers: {
                 'content-type': 'application/json'

@@ -1,18 +1,15 @@
 // import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import useServices from '../Hooks/useServices';
 import Service from '../Service/Service';
 
 const Services = () => {
 
-    const {services, setServices} = useServices({});
+    const {services, isLoading} = useServices({});
+        if(isLoading){
+            return <Spinner className='d-block mx-auto mt-5' animation="border" variant="warning" />
+        }
 
-    // useEffect(()=>{
-    //     const url = 'http://localhost:5000/services';
-    //     fetch(url)
-    //     .then(res=> res.json())
-    //     .then(data=> setServices(data))
-
-    // },[])
     return (
         <div>
             <div className=''>

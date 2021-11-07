@@ -29,16 +29,7 @@ const Header = () => {
               <Nav.Link><Link to="/home">Home</Link></Nav.Link>
               <Nav.Link><Link to="/services">Our Services</Link></Nav.Link>
               <Nav.Link><Link to="/tracking">Tracking</Link></Nav.Link>
-              
-              {/* <Nav.Link><Link to="/about"></Link></Nav.Link> */}
-              
-              <Nav.Link>
-              
-                
-               </Nav.Link>
-              
-              
-              
+        
             </Nav>
             
             <div className='ms-3'>
@@ -48,6 +39,7 @@ const Header = () => {
               <button className="btn btn-outline-danger me-2">Dashboard</button>
             </Link>
             }
+            
             
             {
              !user?.displayName && <Link to="/login">
